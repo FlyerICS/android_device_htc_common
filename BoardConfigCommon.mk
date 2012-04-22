@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include device/htc/msm7x30-common/BoardConfigCommon.mk
+-include device/htc/common/BoardConfigCommon.mk
 
 # inherit from common msm7x30 Recovery
 -include device/htc/7x30-recovery/BoardConfigCommon.mk
@@ -30,7 +30,7 @@ ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 
-TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x30-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/htc/msm7x30-common/msm720/include
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
@@ -51,7 +51,7 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 BOARD_VENDOR_QCOM_AMSS_VERSION := 1200
 
-BOARD_EGL_CFG := device/htc/msm7x30-common/egl.cfg
+BOARD_EGL_CFG := device/htc/common/egl.cfg
 
 BOARD_USES_QCOM_LIBS := true
 BOARD_USES_QCOM_LIBRPC := true
